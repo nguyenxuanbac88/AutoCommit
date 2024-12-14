@@ -17,13 +17,12 @@ jobs:
     - name: Commit and Push file
       env:
         TOKEN: ${{ secrets.GH_TOKEN }} 
-run: |
-  git config --global user.name 'nguyenxuanbac88'
-  git config --global user.email 'xuanbacatym@gmail.com'
-  git stash
-  git pull origin main --rebase
-  git stash pop
-  git add report.txt
-  git commit -am "Automated report"
-  git push https://${{ secrets.GH_TOKEN }}@github.com/nguyenxuanbac88/AutoCommit.git main
-
+      run: |
+        git config --global user.name 'nguyenxuanbac88'
+        git config --global user.email 'xuanbacatym@gmail.com'
+        git stash
+        git pull origin main --rebase
+        git stash pop
+        git add report.txt
+        git commit -am "Automated report"
+        git push https://${TOKEN}@github.com/nguyenxuanbac88/AutoCommit.git main
