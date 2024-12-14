@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Create sample file with just timestamp
         run: date +%s >> report.txt
-      - name: AUTO Commit file
+      - name: Auto Commit file
         env:
           TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
