@@ -24,3 +24,4 @@ jobs:
           git add report.txt
           git commit -m "Automated report"
           git push https://${TOKEN}@github.com/nguyenxuanbac88/AutoCommit.git main
+
