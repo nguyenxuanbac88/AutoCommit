@@ -22,4 +22,4 @@ jobs:
         git config --global user.email 'xuanbacatym@gmail.com'
         git add report.txt
         git commit -am "Automated report"
-        git push https://${TOKEN}@github.com/nguyenxuanbac88/AutoCommit.git main
+        git push https://${TOKEN}@github.com/nguyenxuanbac88/AutoCommit.git master
